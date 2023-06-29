@@ -1,0 +1,45 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BrowserFramework
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import Foundation
+import Kingfisher
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@objc(DownloadAppManager) public class DownloadAppManager : ObjectiveC.NSObject {
+  @objc public var downloadView: UIKit.UIView?
+  public typealias onStartDownload = (Swift.String) -> Swift.Void
+  public typealias backCallback = () -> Swift.Void
+  @objc public init(data: Foundation.Data, downloadStatus: Swift.Int)
+  @objc public func onListenProgress(progress: Swift.Float)
+  @objc public func clickDownloadAction(callback: @escaping BrowserFramework.DownloadAppManager.onStartDownload)
+  @objc public func onDownloadChange(downloadStatus: Swift.Int)
+  @objc public func onBackAction(callback: @escaping BrowserFramework.DownloadAppManager.backCallback)
+  @objc deinit
+}
+extension SwiftUI.View {
+  public func animationObserver<Value>(for value: Value, onChange: ((Value) -> Swift.Void)? = nil, onComplete: (() -> Swift.Void)? = nil) -> some SwiftUI.View where Value : SwiftUI.VectorArithmetic
+  
+}
+extension SwiftUI.View {
+  public func myAnimationObserver(for value: Swift.Int, onChange: ((Swift.Int) -> Swift.Void)? = nil, onComplete: (() -> Swift.Void)? = nil) -> some SwiftUI.View
+  
+}
+@_inheritsConvenienceInitializers @objc(BrowserManager) public class BrowserManager : ObjectiveC.NSObject {
+  @objc public var swiftView: UIKit.UIView?
+  @objc public var webViewCount: Swift.Int
+  public typealias addNewWebView = () -> Swift.Void
+  public typealias clickAppCallback = (Swift.String) -> Swift.Void
+  @objc override dynamic public init()
+  @objc public func fetchHomeData(param: [[Swift.String : Swift.String]], webViewList: [WebKit.WKWebView])
+  @objc public func addNewWkWebView(webView: WebKit.WKWebView)
+  @objc public func showWebViewListData(list: [WebKit.WKWebView])
+  @objc public func clickAppAction(callback: @escaping BrowserFramework.BrowserManager.clickAppCallback)
+  @objc public func clickAddNewHomePageAction(callback: @escaping BrowserFramework.BrowserManager.addNewWebView)
+  @objc deinit
+}

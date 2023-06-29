@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{D679FF96-9A77-42DF-A0FE-461E18A8F217}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A87D8A12-962B-4A73-8E1B-79EFA20CF1F1" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MAUIProject/Platforms/iOS/FirstViewController.cs">
+    <Files>
+      <File FileName="MAUIProject/MainPage.xaml.cs" />
+      <File FileName="MAUIProject/MainPage.xaml" />
+      <File FileName="MAUIProject/MauiProgram.cs" />
+      <File FileName="MAUIProject/Platforms/iOS/Program.cs" />
+      <File FileName="MAUIProject/App.xaml.cs" />
+      <File FileName="MAUIProject/App.xaml" />
+      <File FileName="MAUIProject/AppShell.xaml.cs" />
+      <File FileName="MAUIProject/AppShell.xaml" />
+      <File FileName="MAUIProject/Platforms/iOS/FirstViewController.cs" Line="48" Column="13" />
+      <File FileName="MAUIProject/Platforms/iOS/Info.plist" />
+      <File FileName="MAUIProject/Platforms/iOS/SecondViewController.cs" />
+      <File FileName="MAUIProject/Platforms/iOS/AppDelegate.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MAUIProject" expanded="True">
+            <Node name="MAUIProject" expanded="True">
+              <Node name="Dependencies" expanded="True" selected="True">
+                <Node name="net7.0-ios" expanded="True" />
+              </Node>
+              <Node name="Platforms" expanded="True">
+                <Node name="iOS" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="AppShell.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MAUIProject PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A87D8A12-962B-4A73-8E1B-79EFA20CF1F1" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SwiftUIBindingMAUI/ApiDefinitions.cs">
+    <Files>
+      <File FileName="SwiftUIBindingMAUI/ApiDefinitions.cs" Line="6" Column="14" />
+      <File FileName="SwiftUIBindingMAUI/StructsAndEnums.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SwiftUIBindingMAUI" expanded="True">
+            <Node name="SwiftUIBindingMAUI" expanded="True">
+              <Node name="ApiDefinitions.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

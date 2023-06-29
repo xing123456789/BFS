@@ -1,0 +1,120 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BrowserFramework
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import CoreData
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@objc(DownloadAppManager) public class DownloadAppManager : ObjectiveC.NSObject {
+  @objc public var downloadView: UIKit.UIView?
+  public typealias onStartDownload = (Swift.String) -> Swift.Void
+  public typealias backCallback = () -> Swift.Void
+  @objc public init(data: Foundation.Data, downloadStatus: Swift.Int)
+  @objc public func onListenProgress(progress: Swift.Float)
+  @objc public func clickDownloadAction(callback: @escaping BrowserFramework.DownloadAppManager.onStartDownload)
+  @objc public func onDownloadChange(downloadStatus: Swift.Int)
+  @objc public func onBackAction(callback: @escaping BrowserFramework.DownloadAppManager.backCallback)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(BrowserViewManager) public class BrowserViewManager : ObjectiveC.NSObject {
+  @objc public var browserView: UIKit.UIView?
+  public typealias initNewWebView = (WebKit.WKWebViewConfiguration?) -> WebKit.WKWebView
+  public static var webviewGenerator: BrowserFramework.BrowserViewManager.initNewWebView?
+  public typealias clickAppCallback = (Swift.String) -> Swift.Void
+  @objc override dynamic public init()
+  @objc public static func webviewGeneratorCallback(callback: @escaping BrowserFramework.BrowserViewManager.initNewWebView)
+  @objc public func clickAppAction(callback: @escaping BrowserFramework.BrowserViewManager.clickAppCallback)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(BookmarkEntity) public class BookmarkEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BrowserFramework.BookmarkEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BrowserFramework.BookmarkEntity>
+  @objc @NSManaged dynamic public var createdDate: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Foundation.UUID? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var imageName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var link: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension BrowserFramework.BookmarkEntity : Swift.Identifiable {
+  public typealias ID = Foundation.UUID?
+}
+@_inheritsConvenienceInitializers @objc(HistoryEntity) public class HistoryEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BrowserFramework.HistoryEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BrowserFramework.HistoryEntity>
+  @objc @NSManaged dynamic public var createdDate: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Foundation.UUID? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var imageName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var link: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension BrowserFramework.HistoryEntity : Swift.Identifiable {
+  public typealias ID = Foundation.UUID?
+}
+@_inheritsConvenienceInitializers @objc(HotSearchEntity) public class HotSearchEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BrowserFramework.HotSearchEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BrowserFramework.HotSearchEntity>
+  @objc @NSManaged dynamic public var id: Foundation.UUID? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var index: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var link: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension BrowserFramework.HotSearchEntity : Swift.Identifiable {
+  public typealias ID = Foundation.UUID?
+}
